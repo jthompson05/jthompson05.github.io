@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everyday Tech - Autonomous Cars</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">     
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>      
+  </head>
+  
+  <body class="size-1140">
+    <header role="banner" class="position-absolute">    
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-2">
+          <a href="index.html" class="logo">
+            <img class="logo-white" src="img/logo.png" alt="">
+            <img class="logo-dark" src="img/logo-dark.png" alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          <ul class="right chevron">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="genai.html">GenAI Assistant</a></li>
+            <li><a href="socialm.html">Social Media x Ethics</a></li>
+            <li><a href="everydayt.html">Everyday Tech</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main role="main">
+      <article>
+        <header class="section background-dark">
+          <div class="line">        
+            <h1 class="text-white margin-top-bottom-40 text-size-60 text-line-height-1">Autonomous Cars: The Role of LiDAR</h1>
+            <p class="margin-bottom-0 text-size-16">
+              This project explores the technical implementation of Light Detection and Ranging (LiDAR) in autonomous vehicles and deconstructs the ethical and social implications of removing the human driver from the loop. 
+            </p>
+          </div>  
+        </header>
+
+        <section class="section background-white">
+          <div class="line">
+            <h2 class="text-size-40 margin-bottom-30">Technical Exploration: LiDAR</h2>
+            <hr class="break-small background-primary margin-bottom-30">
+            
+            <p class="margin-bottom-20">
+              Autonomous cars achieve "self-driving" status by employing a wide array of sensors for object detection and area mapping. A core component is <strong>LiDAR</strong>, which emits millions of light pulses and calculates distance based on the time it takes for those pulses to bounce back. These individual pulses generate "point clouds"—massive 3D data sets that create a detailed map of the vehicle's surroundings.
+            </p>
+
+            <div class="margin-bottom-40 text-center">
+              <img src="img/lidar.jpg" alt="A three-step diagram showing LiDAR sensors sending light pulses to the ground, the pulses returning to the sensor, and the return time measuring the distance.">
+              <p class="text-italic">Figure 1: How LiDAR pulses calculate distance.</p>
+            </div>
+
+            <h3 class="text-size-30 margin-bottom-20">Prototype: Mobile LiDAR Scanning</h3>
+            <p class="margin-bottom-20">
+              For the exploration, we used an iPhone Pro's LiDAR sensor to scan physical environments. While less powerful than a Waymo vehicle's array, it demonstrates how point clouds are generated and translated into 3D models using software like Blender.
+            </p>
+
+            <div class="margin-bottom-40 text-center">
+              <img src="img/blender_screenshot1.png" alt="Blender screenshot 1: Point cloud visualization" style="max-width:100%; margin-bottom:20px;">
+              <img src="img/blender_screenshot2.png" alt="Blender screenshot 2: 3D model manipulation in Blender" style="max-width:100%;">
+              <p class="text-italic">
+                Point cloud generation and spatial manipulation in Blender.</p>
+            </div>
+
+            <p class="margin-bottom-40">
+              <strong>Exploration Material:</strong> <a href="https://github.com/jthompson05/CS302LidarDemo.git" target="_blank">Access the LiDAR data scan on GitHub.</a> 
+            </p>
+
+            <h2 class="text-size-40 margin-bottom-30">Philosophical Deconstruction</h2>
+            <hr class="break-small background-primary margin-bottom-30">
+            
+            <h3 class="text-size-30 margin-bottom-20">In-Class Approach: Utilitarianism</h3>
+            <p class="margin-bottom-20">
+              During class, we explored <strong>Utilitarianism</strong>, which asserts that the most ethical choice is the one producing the greatest good for the greatest number. In autonomous driving, this applies to "forced-choice" scenarios like the Trolley Problem, where software might treat human lives as numerical values to be preserved. This shaped my thinking regarding how companies like Waymo might justify massive data collection as a "common good" for safety. 
+            </p>
+
+            <h3 class="text-size-30 margin-bottom-20">Extended Approach: Actor-Network Theory (ANT)</h3>
+            <p class="margin-bottom-20">
+              Beyond class materials, I looked at <strong>Actor-Network Theory (ANT)</strong>. ANT suggests that agency is not held by one person, but distributed across a network of humans, hardware, software, and infrastructure. This challenges the "fallacy" of blaming a human driver for not taking control quickly enough; if the car (the network) fails to provide situational awareness, the entire network has failed.
+            </p>
+
+            <h3 class="text-size-30 margin-bottom-20">Discussion Reflection</h3>
+            <p class="margin-bottom-20">
+              My in-class discussion focused on whether or not it is ethically sound for autononous cars to treat lives as numerical values. Hudson made me think about how if lives were not treated as numerical values, there would be a lot of bias introduced. Additionally, reflecting on Nora and Yahvi's research on Tinder/dating app Algorithms, I realized that the biases in LiDAR's object detection datasets mirror the social inequalities and biases in dating app algorithms.
+            </p>
+
+            <h3 class="text-size-30 margin-bottom-20">Prepared Discussion Questions</h3>
+            <ul class="margin-bottom-40">
+              <li>Is it ethically sound for a car's software to treat human lives as "numerical values"?</li>
+              <li>Does the ANT perspective make it harder or easier to establish legal accountability?</li>
+              <li>What unique "human" quality of driving is lost in the transition to machine sensors?</li>
+            </ul>
+
+            <h2 class="text-size-40 margin-bottom-30">References</h2>
+            <hr class="break-small background-primary margin-bottom-30">
+            <p class="text-size-12">
+              Ethics Unwrapped. (n.d.). <i>Utilitarianism</i>. University of Texas at Austin. https://ethicsunwrapped.utexas.edu/glossary/utilitarianism<br>
+              Simply Psychology. (2023). <i>Actor-Network Theory (ANT)</i>. https://www.simplypsychology.org/actor-network-theory.html<br>
+            </p>
+          </div>
+        </section> 
+      </article>
+    </main>
+    
+    <footer>
+      <section class="padding background-dark full-width">
+        <div class="s-12 l-6">
+          <p class="text-size-12">2026, Joshua Thompson - Everyday Tech Project</p>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+  </body>
+</html>
